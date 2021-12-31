@@ -11,7 +11,9 @@
     <div class="navbar mb-1">
       <nav class="container">
         <h2 class="f3 text-error">GSass Library</h2>
-        <p class="f6 text-primary-light-1">A lightweight CSS library for development</p>
+        <p class="f6 text-primary-light-1">
+          A lightweight CSS library for development
+        </p>
       </nav>
     </div>
     <div class="container mt-3">
@@ -80,16 +82,24 @@
           <div class="bg-primary text-white p-1">12-xs</div>
         </div>
         <div class="col-12-xs col-6-md col-3-lg">
-          <div class="bg-secondary text-white p-1 ta-center">12-xs 6-md 3-lg</div>
+          <div class="bg-secondary text-white p-1 ta-center">
+            12-xs 6-md 3-lg
+          </div>
         </div>
         <div class="col-12-xs col-6-md col-3-lg">
-          <div class="bg-secondary text-white p-1 ta-center">12-xs 6-md 3-lg</div>
+          <div class="bg-secondary text-white p-1 ta-center">
+            12-xs 6-md 3-lg
+          </div>
         </div>
         <div class="col-12-xs col-6-md col-3-lg">
-          <div class="bg-secondary text-white p-1 ta-center">12-xs 6-md 3-lg</div>
+          <div class="bg-secondary text-white p-1 ta-center">
+            12-xs 6-md 3-lg
+          </div>
         </div>
         <div class="col-12-xs col-6-md col-3-lg">
-          <div class="bg-secondary text-white p-1 ta-center">12-xs 6-md 3-lg</div>
+          <div class="bg-secondary text-white p-1 ta-center">
+            12-xs 6-md 3-lg
+          </div>
         </div>
         <div class="col-12-xs col-6-md">
           <div class="bg-info text-white p-1 ta-center">12-xs 6-md</div>
@@ -98,7 +108,6 @@
           <div class="bg-info text-white p-1 ta-center">12-xs 6-md</div>
         </div>
       </div>
-
 
       <div class="row gap-1">
         <div class="col-12-xs">
@@ -154,7 +163,7 @@
         <div class="col-12-xs col-6-sm col-3-xl">
           <div class="card">
             <h1 class="card-title">This is card title</h1>
-            <img src="https://pi.movoto.com/p/4001/33056855_0_RJFF2A_p.jpeg">
+            <img src="https://pi.movoto.com/p/4001/33056855_0_RJFF2A_p.jpeg" />
             <p class="card-body">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
               est! Laborum, perferendis nostrum? Veritatis aliquid enim illum
@@ -166,7 +175,7 @@
         <div class="col-12-xs col-6-sm col-3-xl">
           <div class="card">
             <h1 class="card-title">This is card title</h1>
-            <img src="https://pi.movoto.com/p/4001/48179340_0_e7nNNU_p.jpeg">
+            <img src="https://pi.movoto.com/p/4001/48179340_0_e7nNNU_p.jpeg" />
             <p class="card-body">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
               est! Laborum, perferendis nostrum? Veritatis aliquid enim illum
@@ -178,7 +187,7 @@
         <div class="col-12-xs col-6-sm col-3-xl">
           <div class="card">
             <h1 class="card-title">This is card title</h1>
-            <img src="https://pi.movoto.com/p/4001/48180192_0_eJYJnJ_p.jpeg">
+            <img src="https://pi.movoto.com/p/4001/48180192_0_eJYJnJ_p.jpeg" />
             <p class="card-body">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
               est! Laborum, perferendis nostrum? Veritatis aliquid enim illum
@@ -190,7 +199,7 @@
         <div class="col-12-xs col-6-sm col-3-xl">
           <div class="card">
             <h1 class="card-title">This is card title</h1>
-            <img src="https://pi.movoto.com/p/4001/48182901_0_eFqeiz_p.jpeg">
+            <img src="https://pi.movoto.com/p/4001/48182901_0_eFqeiz_p.jpeg" />
             <p class="card-body">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
               est! Laborum, perferendis nostrum? Veritatis aliquid enim illum
@@ -201,9 +210,31 @@
         </div>
       </div>
 
+      <button id="btnPopup" class="btn">Popup</button>
+
+      
+
       <footer class="bg-gray-light-7 pt-3 pb-3 ta-center">
         <div class="container">Copyright &copy;2022 GSass</div>
       </footer>
     </div>
+
+    <script>
+      
+
+      document.querySelector("#btnPopup").addEventListener("click", () => {
+        window.showDialog(`<p class="f3">Popup Title</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            eaque neque assumenda, nesciunt nulla quidem, quae deserunt dolor
+            illo ipsa corrupti molestiae corporis nisi placeat ipsam sequi magni
+            necessitatibus distinctio!
+          </p>`)
+      });
+
+      
+    </script>
+    <script src="/lib/js/main.js"></script>
+
   </body>
 </html>
