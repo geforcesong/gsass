@@ -1,0 +1,22 @@
+@import "variables";
+@import "base";
+@import "font";
+@import "colors";
+@import "utilities";
+@import "breakpoints";
+@import "functions";
+@import "components/grid";
+@import "components/navbar";
+@import "components/buttons";
+@import "components/card";
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fontRow div{
+    width: 100%;
+}
