@@ -155,6 +155,14 @@ $utilities: (
       "right": right,
     ),
   ),
+  "overflow": (
+    "prefix": "of",
+    "values": (
+      "hidden": hidden,
+      "scroll": scroll,
+      "visible": visible,
+    ),
+  ),
 );
 
 @each $property, $map in $utilities {

@@ -223,18 +223,18 @@
       
 
       document.querySelector("#btnPopup").addEventListener("click", () => {
-        window.showDialog(`<p class="f3">Popup Title</p>
+        Dialog.getInstance().show(`<p class="f3">Popup Title</p>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
             eaque neque assumenda, nesciunt nulla quidem, quae deserunt dolor
             illo ipsa corrupti molestiae corporis nisi placeat ipsam sequi magni
             necessitatibus distinctio!
-          </p>`)
+          </p>`);
       });
 
       
     </script>
-    <script src="lib/js/main.js"></script>
+    <script async type="module" src="lib/js/main.js"></script>
 
   </body>
 </html>

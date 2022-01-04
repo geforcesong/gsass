@@ -825,6 +825,18 @@ body {
   text-align: right;
 }
 
+.of-hidden {
+  overflow: hidden;
+}
+
+.of-scroll {
+  overflow: scroll;
+}
+
+.of-visible {
+  overflow: visible;
+}
+
 .row {
   display: flex;
   flex-flow: row wrap;
