@@ -210,7 +210,8 @@
         </div>
       </div>
 
-      <button id="btnPopup" class="btn">Popup</button>
+      <button id="btnPopup" class="btn">Popup With AutoClose</button>
+      <button id="btnPopup1" class="btn">Popup</button>
 
       
 
@@ -219,22 +220,8 @@
       </footer>
     </div>
 
-    <script>
-      
-
-      document.querySelector("#btnPopup").addEventListener("click", () => {
-        GS.Dialog.getInstance().show(`<p class="f3">Popup Title</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            eaque neque assumenda, nesciunt nulla quidem, quae deserunt dolor
-            illo ipsa corrupti molestiae corporis nisi placeat ipsam sequi magni
-            necessitatibus distinctio!
-          </p>`, {autoClose: true});
-      });
-
-      
-    </script>
     <script async type="module" src="lib/js/main.js"></script>
+    <script async src="site.js"></script>
 
   </body>
 </html>
