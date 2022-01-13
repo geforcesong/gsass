@@ -1,6 +1,6 @@
 const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
-// const purgeCss = require("gulp-purgecss");
+const purgeCss = require("gulp-purgecss");
 
 const scssFiles = "**/*.scss";
 const htmlFiles = "**/*.html";
@@ -8,7 +8,7 @@ const htmlFiles = "**/*.html";
 function buildStyles() {
   return src(scssFiles)
     .pipe(sass())
-    // .pipe(purgeCss({ content: ["*.html"] }))
+    .pipe(purgeCss({ content: [htmlFiles] }))
     .pipe(dest("dist"));
 }
 

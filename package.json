@@ -20,5 +20,8 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.45.2"
+  },
+  "dependencies": {
+    "gulp-purgecss": "^4.1.3"
   }
 }
